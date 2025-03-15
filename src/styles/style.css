@@ -17,7 +17,7 @@ body {
 
 main {
     width: 500px;
-    height: 600px;
+    height: 570px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ header {
     height: 70%;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
     align-items: center;   
 }
@@ -77,6 +77,26 @@ header {
 }
 
 #player-moment {
-    margin-top: 10px;
+    margin: 10px 0px;
     color: white;
+}
+
+@media screen and (max-width: 530px) {
+    main {
+        width: 300px;
+        height: 400px;
+    }
+
+    #game {
+        gap: 15px;
+    }
+
+    .moves {
+        width: 80px;
+        height: 80px;
+    }
+
+    .move {
+        font-size: 5em;
+    }
 }
