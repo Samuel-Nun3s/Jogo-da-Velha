@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <main>
-        <h1>Jogo da velha</h1>
-        <div id="line"></div>
+        <header>
+            <h1 id="title">Jogo da velha</h1>
+            <div id="line"></div>
+        </header>
         <div id="game">
-            <button data-i="1" type="button"></button>
-            <button data-i="2" type="button"></button>
-            <button data-i="3" type="button"></button>
-            <button data-i="4" type="button"></button>
-            <button data-i="5" type="button"></button>
-            <button data-i="6" type="button"></button>
-            <button data-i="7" type="button"></button>
-            <button data-i="8" type="button"></button>
-            <button data-i="9" type="button"></button>
+            <button class="moves" data-i="1" type="button"><i class="fa-regular fa-circle move"></i></button>
+            <button class="moves" data-i="2" type="button"><i class="fa-solid fa-x move"></i></button>
+            <button class="moves" data-i="3" type="button"></button>
+            <button class="moves" data-i="4" type="button"></button>
+            <button class="moves" data-i="5" type="button"></button>
+            <button class="moves" data-i="6" type="button"></button>
+            <button class="moves" data-i="7" type="button"></button>
+            <button class="moves" data-i="8" type="button"></button>
+            <button class="moves" data-i="9" type="button"></button>
         </div>
-        <h2>Jogador da vez = X</h2>
+        <h2 id="player-moment">Jogador da vez = <i class="fa-regular fa-circle"></i></h2>
     </main>
 </body>
 </html>
